@@ -114,30 +114,42 @@ a{
     text-underline-offset: 0.5vh;
 }
 
-footer{
-    display: block;
+#footer-bar{
     position: fixed;
     margin:0;
     padding:0;
-    background-color: rgba(207, 195, 195, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     width:100vw;
     height:10vh;
     bottom:0;
+    left:0;
 }
 
 #linkedin_logo{
+    position: fixed;
     background-color: white;
-    width: 10px;
-    height: 10px;
+    width: 10vw;
+    height: 10vh;
+
+}
+
+#github_logo{
+    position: fixed;
+    background-color: white;
+    width: 10vw;
+    height: 10vh;
+
 }
 
 #facebook_logo{
+    position: fixed;
     background-color: white;
     width: 10px;
     height: 10px;
 }
 
 #whatsapp_logo{
+    position: fixed;
     background-color: white;
     width: 10px;
     height: 10px;
