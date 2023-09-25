@@ -3,25 +3,25 @@ html {
     margin: 0;
     animation-name: start;
     animation-duration: 1s; 
-  }
+}
   
-  @keyframes start {
-    0% {
-      filter: blur(10px); 
-      opacity: 0; 
-    }
-    100% {
-      filter: blur(0); 
-      opacity: 1; 
-    }
+@keyframes start {
+  0% {
+    filter: blur(10px); 
+    opacity: 0; 
   }
+  100% {
+    filter: blur(0); 
+    opacity: 1; 
+  }
+}  
 
-  body{
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height:100vh;
-    background-color: rgb(66, 33, 33);
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height:100vh;
+  background-color: rgb(66, 33, 33);    
 }
 
 #CV{
@@ -48,9 +48,9 @@ html {
 }
 
 a{
-    text-align: right;
-    color: aliceblue;
-    text-decoration: none;
+  text-align: right;
+  color: aliceblue;
+  text-decoration: none;  
 }
 
 #projects{
@@ -60,30 +60,85 @@ a{
 
 
 #section-container{
-    padding: 3em;
-    padding-top:6em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:5em;
+  padding: 3em;
+  padding-top:6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:5em;    
+  font-family:'Courier New', Courier, monospace;
 }
 
 #about-section-1 {
-    display: flex;
-    background-color: rgba(247, 247, 247, 0.2); 
-    min-width: 35em;
-    min-height: 35em;
-    border-radius: 2em;
-    transition-duration: 0.5s;
-  }
+  background-color: rgba(247, 247, 247, 0.3); 
+  width: 20vw;
+  height: 60vh;
+  border-radius: 2em;
+  transition-duration: 0.5s;  
+  padding:0 3vw; 
+  text-align: justify; 
+  font-size: 1vw;
+}
 
-  #about-section-2 {
-    display: flex;
-    background-color: rgba(247, 247, 247, 0.2); 
-    min-width: 35em;
-    min-height: 35em;
-    border-radius: 2em;
-    transition-duration: 0.5s;
-  }
+#about-section-1 h2{
+  text-align: left; 
+  font-size: 1.6vw;
+}
+
+#about-section-2 {
+  background-color: rgba(247, 247, 247, 0.3); 
+  width: 20vw;
+  height: 60vh;
+  border-radius: 2em;
+  transition-duration: 0.5s;  
+  padding:0 3vw; 
+  text-align: justify;    
+}
+
+#about-section-2 h2{
+  text-align: left; 
+}
+
+#about-section-3 {
+  background-color: rgba(247, 247, 247, 0.3); 
+  width: 20vw;
+  height: 60vh;
+  border-radius: 2em;
+  transition-duration: 0.5s;  
+  padding:0 3vw;  
+  text-align: justify; 
+}
+
+#about-section-3 h2{
+  text-align: left; 
+}
+
+#about-section-4 {
+  background-color: rgba(247, 247, 247, 0.3); 
+  width: 20vw;
+  height: 60vh;
+  border-radius: 2em;
+  transition-duration: 0.5s;  
+  padding:0 3vw;  
+  text-align: justify; 
+}
+
+#about-section-4 h2{
+  text-align: left; 
+}
+
+#about-section-5 {
+  background-color: rgba(247, 247, 247, 0.3); 
+  width: 20vw;
+  height: 60vh;
+  border-radius: 2em;
+  transition-duration: 0.5s;  
+  padding:0 3vw;  
+  text-align: justify; 
+}
+
+#about-section-5 h2{
+  text-align: left; 
+}
