@@ -127,9 +127,12 @@ a{
 
 #linkedin_logo{
     position: fixed;
+    display:block;
     background-color: white;
-    width: 10vw;
-    height: 10vh;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 5px;
+    bottom: 10px;
 
 }
 
