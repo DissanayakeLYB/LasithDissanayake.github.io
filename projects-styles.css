@@ -21,7 +21,7 @@ body{
   padding: 0;
   width: 100vw;
   height:100vh;
-  background-color: rgb(66, 33, 33);    
+  background-color: rgb(233, 231, 231);  
 }
 
 #CV{
@@ -33,13 +33,14 @@ body{
   border-radius:100px;
   border:0;
   font-size: 2vh;
-  letter-spacing: 2px;
   background: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
 }
 
 #nav-bar-section{
   position:fixed;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
 }
 
 #nav-bar{
@@ -58,12 +59,12 @@ body{
 
 a{
   text-align: right;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   text-decoration: none;  
 }
 
 #projects{
-  text-decoration: solid 0.2vh underline white;
+  text-decoration: solid 0.2vh underline rgb(0, 0, 0);
   text-underline-offset: 0.7vh;
 }
 
@@ -78,18 +79,28 @@ a{
   flex-wrap: wrap;
   gap:5em;    
   font-family:'Courier New', Courier, monospace;
-  color:white;
+  color:rgb(0, 0, 0);
   font-weight: 600;
 }
 
+.img-description{
+  display: flex;
+  position: flex;
+}
+
+.topic-description{
+  margin: 20px;
+}
+
 #about-section-1 {
-  background-color: rgba(247, 247, 247, 0.3); 
-  width: 20vw;
-  height: 80vh;
+  margin-top:5vh;
+  width: 65vw;
+  height: 30vh;
   border-radius: 2em;
   transition-duration: 0.5s;  
   padding:0 3vw;  
   font-size: 1vw;
+  margin-right: 20vw;
 }
 
 #about-section-1 img {
@@ -98,14 +109,21 @@ a{
   border-radius: 1em;
   width:18vw;
   height:25vh;
+  
 }
 
 #about-section-1 h2{
   margin-top: 4vh;
-  text-align: left; 
   font-size: 1.6vw;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  letter-spacing: 5px;
+}
+
+#about-section-1 p{
+  margin-top: 2vh;
+  font-size: 1.4vw;
+  text-align: left;
 }
 
 #about-section-1:hover {
@@ -114,29 +132,35 @@ a{
 }
 
 #about-section-2 {
-  background-color: rgba(247, 247, 247, 0.3); 
-  width: 20vw;
-  height: 80vh;
+  width: 65vw;
+  height: 30vh;
   border-radius: 2em;
   transition-duration: 0.5s;  
-  padding:0 3vw; 
+  padding:0 3vw;  
   font-size: 1vw;
+  margin-left: 20vw;
 }
 
 #about-section-2 img {
-  padding:1em 2.7em;
+  padding: 1em;
   background-color: white;
   border-radius: 1em;
-  width:14vw;
+  width:18vw;
   height:25vh;
 }
 
 #about-section-2 h2{
   margin-top: 4vh;
-  text-align: left; 
   font-size: 1.6vw;
   text-transform: uppercase;
-  text-align: center;
+  letter-spacing: 5px;
+  text-align: right;
+}
+
+#about-section-2 p{
+  margin-top: 2vh;
+  font-size: 1.4vw;
+  text-align: right;
 }
 
 #about-section-2:hover {
@@ -145,13 +169,13 @@ a{
 }
 
 #about-section-3 {
-  background-color: rgba(247, 247, 247, 0.3); 
-  width: 20vw;
-  height: 80vh;
+  width: 70vw;
+  height: 30vh;
   border-radius: 2em;
   transition-duration: 0.5s;  
-  padding:0 3vw; 
+  padding:0 3vw;  
   font-size: 1vw;
+  margin-right: 16vw;
 }
 
 #about-section-3 img {
@@ -163,11 +187,17 @@ a{
 }
 
 #about-section-3 h2{
-  margin-top: 4vh;
-  text-align: left; 
+  margin-top: 2vh;
   font-size: 1.6vw;
   text-transform: uppercase;
-  text-align: center;
+  text-align:left;
+  letter-spacing: 5px;
+}
+
+#about-section-3 p{
+  margin-top: 2vh;
+  font-size: 1.4vw;  
+  text-align: left;
 }
 
 #about-section-3:hover {
@@ -175,15 +205,14 @@ a{
   transition-duration: 0.5s;  
 }
 
-
 #about-section-4 {
-  background-color: rgba(247, 247, 247, 0.3); 
-  width: 20vw;
-  height: 80vh;
+  width: 100vw;
+  height: 30vh;
   border-radius: 2em;
   transition-duration: 0.5s;  
-  padding:0 3vw; 
+  padding:0 3vw;  
   font-size: 1vw;
+  margin-left: 10vw;
 }
 
 #about-section-4 img {
@@ -195,11 +224,17 @@ a{
 }
 
 #about-section-4 h2{
-  margin-top: 4vh;
-  text-align: left; 
+  margin-top: 2vh;
   font-size: 1.6vw;
   text-transform: uppercase;
-  text-align: center;
+  text-align:right;
+  letter-spacing: 5px;
+}
+
+#about-section-4 p{
+  margin-top: 2vh;
+  font-size: 1.4vw;
+  text-align: right;
 }
 
 #about-section-4:hover {
@@ -207,29 +242,35 @@ a{
   transition-duration: 0.5s;  
 }
 
-
 #about-section-5 {
-  background-color: rgba(247, 247, 247, 0.3); 
-  width: 20vw;
-  height: 80vh;
+  width: 75vw;
+  height: 30vh;
   border-radius: 2em;
   transition-duration: 0.5s;  
-  padding:0 3vw; 
+  padding:0 3vw;  
   font-size: 1vw;
+  margin-right: 10vw;
 }
 
 #about-section-5 img {
+  padding: 1em;
+  background-color: white;
   border-radius: 1em;
-  width:20vw;
-  height:28vh;
+  width:18vw;
+  height:25vh;
 }
 
 #about-section-5 h2{
-  margin-top: 4vh;
-  text-align: left; 
+  margin-top: 2vh;
   font-size: 1.6vw;
   text-transform: uppercase;
-  text-align: center;
+  letter-spacing: 5px;
+}
+
+#about-section-5 p{
+  margin-top: 2vh;
+  font-size: 1.4vw;
+  text-align: left;
 }
 
 #about-section-5:hover {
@@ -237,3 +278,59 @@ a{
   transition-duration: 0.5s;  
 }
 
+
+
+#footer-bar{
+  position: fixed;
+  display:flex;
+  margin:0;
+  padding:0;
+  width:0.25vw;
+  height:30vh;
+  bottom:35vh;
+  right:2vw;
+  list-style: none;
+}
+
+#linkedin_logo{
+  position: fixed;
+  bottom:28vh;
+  right: 1vw;
+  width: 4vh;
+  height: 4vh;
+  border: 2px solid black;
+  border-radius:5em;
+  padding:4px;
+}
+
+#github_logo{
+  position: fixed;
+  bottom:20vh;
+  right: 1vw;
+  width: 4vh;
+  height: 4vh;
+  border: 2px solid black;
+  border-radius:5em;
+  padding:4px;
+}
+
+#facebook_logo{
+  position: fixed;
+  bottom:12vh;
+  right: 1vw;
+  width: 4.7vh;
+  height: 4.7vh;
+  border: 2px solid black;
+  border-radius:5em;
+}
+
+#whatsapp_logo{
+  position: fixed;
+  bottom:4vh;
+  right: 1vw;
+  width: 3vh;
+  height: 3vh;
+  border: 2px solid black;
+  border-radius:5em;
+  padding:6px;
+}
