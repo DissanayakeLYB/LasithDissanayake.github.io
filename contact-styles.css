@@ -19,6 +19,7 @@ html {
 body{
     margin: 0;
     padding: 0;
+    background-color: rgb(233, 231, 231);
 }
 
 #CV{
@@ -31,6 +32,7 @@ body{
   border:0;
   font-size: 2vh;
   background: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 2px;
 }
 
@@ -43,7 +45,7 @@ h1{
   padding-top: 0.5em;
   position: flex;
   flex-wrap: wrap;  
-  color: rgb(255,255,255);
+  color: rgb(0, 0, 0);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -62,123 +64,139 @@ h1{
 }
 
 a{
-    text-align: right;
-    color: aliceblue;
-    text-decoration: none;
+  text-align: right;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 #contact{
-  text-decoration: solid 0.2vh underline white;
+  text-decoration: solid 0.2vh underline rgb(0, 0, 0);
   text-underline-offset: 0.7vh;
 }
 
 #section-container{
-    padding-left: 2em;
-    padding-top:20vh;
-    position:flex;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 15vh;
+  left: 32vw;
 }
 
 #contact-section {
-    display: flex;
-    background-color: rgba(247, 247, 247, 0.2); 
-    min-width: 40em;
-    min-height: 25em;
-    border-radius: 2em;
-    padding:1em;
-  }
-
-#div-name{
-  margin: 0.5em;
-  padding: 0.5em;  
-}
-
-label {
-  color:#f4f4f4;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#inputName {
-  color: #333;
-  background-color: #f4f4f4;
-  padding: 1em;
-  margin-left: 2em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
-  height: 1em;
-  width: 30em;
-  outline: none;  
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#inputName::placeholder {
-  color: rgb(181, 180, 180,0.8);
-}
-
-#div-email{
-  margin: 0.5em;
-  padding: 0.5em;  
-}
-
-#inputEmail {
-  color: #333;
-  background-color: #f4f4f4;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
-  height: 1em;
-  width: 30em;
-  outline: none;
-  align-items: flex-end;
-  margin-left: 4.7em;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#inputEmail::placeholder {
-  color: rgb(181, 180, 180,0.8);
-}
-
-#div-feedback{
-  margin: 0.5em;
-  padding: 0.5em;  
-}
-
-#inputFeedback {
-  text-align: left;
-  color: #333;
-  background-color: #f4f4f4;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
-  height: 5em;
-  max-width:30em;
-  max-height: 5em;
-  min-width:30em;
-  min-height: 5em;
-  text-wrap: wrap;
-  outline: none;
-  margin-left:2.3em;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#inputFeedback::placeholder {
-  color: rgb(181, 180, 180,0.8);
-}
-
-#btnSubmit{
   position: flex;
-  width: 6em;
-  height: 2em;
-  border-radius: 5px;
+  width: 30vw;
+  margin: 0 auto; 
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
   border: none;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 1em;
-  margin-left: 35em;
-  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin:1em 0 3em 0;
+  background-color: rgb(233, 231, 231);
+}
+
+textarea {
+  resize: none;
+  height: 20vh; 
+}
+
+#btnSubmit {
+  background-color: rgb(233, 231, 231);
+  color: #000000;
+  border: none;
+  font-size: 2.4vh;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  border-bottom:1px solid #000000;
+  border-right:1px solid #000000;
+}
+
+#btnSubmit:hover {
+  border-top:0 ;
+  border-left:0 ;
+  border-bottom:0;
+  border-right:0;
+}
+
+#btnSubmit:active {
+  border-top:1px solid #000000;
+  border-left:1px solid #000000;
+  border-bottom:0px;
+  border-right:0px;
+}
+
+
+#footer-bar{
+  position: fixed;
+  display:flex;
+  margin:0;
+  padding:0;
+  width:0.25vw;
+  height:30vh;
+  bottom:35vh;
+  right:2vw;
+  list-style: none;
+}
+
+#linkedin_logo{
+  position: fixed;
+  bottom:28vh;
+  right: 1vw;
+  width: 4vh;
+  height: 4vh;
+  border: 2px solid black;
+  border-radius:5em;
+  padding:4px;
+}
+
+#github_logo{
+  position: fixed;
+  bottom:20vh;
+  right: 1vw;
+  width: 4vh;
+  height: 4vh;
+  border: 2px solid black;
+  border-radius:5em;
+  padding:4px;
+}
+
+#facebook_logo{
+  position: fixed;
+  bottom:12vh;
+  right: 1vw;
+  width: 4.7vh;
+  height: 4.7vh;
+  border: 2px solid black;
+  border-radius:5em;
+}
+
+#whatsapp_logo{
+  position: fixed;
+  bottom:4vh;
+  right: 1vw;
+  width: 3vh;
+  height: 3vh;
+  border: 2px solid black;
+  border-radius:5em;
+  padding:6px;
 }
