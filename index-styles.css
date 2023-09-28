@@ -116,6 +116,7 @@ a{
 
 #footer-bar{
     position: fixed;
+    display:flex;
     margin:0;
     padding:0;
     background-color: rgba(255, 255, 255, 0.1);
@@ -127,33 +128,28 @@ a{
 
 #linkedin_logo{
     position: fixed;
-    display:block;
-    background-color: white;
+    bottom:2vh;
     width: 5vh;
     height: 5vh;
-    border-radius: 5px;
-    bottom: 10px;
-
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 #github_logo{
     position: fixed;
-    background-color: white;
     width: 10vw;
     height: 10vh;
-
+    border: 10px solid black;
 }
 
 #facebook_logo{
     position: fixed;
-    background-color: white;
     width: 10px;
     height: 10px;
 }
 
 #whatsapp_logo{
     position: fixed;
-    background-color: white;
     width: 10px;
     height: 10px;
 }
