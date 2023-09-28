@@ -19,6 +19,8 @@ html {
     }
   }
 
+
+
 body{
   margin: 0;
   padding: 0;
@@ -139,57 +141,55 @@ a{
 
 #footer-bar{
   position: fixed;
-  /* display:flex; */
+  display:flex;
   margin:0;
   padding:0;
-  background-color: rgba(255, 255, 255, 0.8);
-  width:100vw;
-  height:10vh;
-  bottom:0;
-  left:0;
-  /* border-radius:10em; */
+  width:0.25vw;
+  height:30vh;
+  bottom:35vh;
+  right:2vw;
   list-style: none;
 }
 
 #linkedin_logo{
   position: fixed;
-  bottom:2vh;
-  left: 43vw;
+  bottom:28vh;
+  right: 1vw;
   width: 4vh;
   height: 4vh;
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius:5em;
-  padding:3px;
+  padding:4px;
 }
 
 #github_logo{
   position: fixed;
-  bottom:2.1vh;
-  left: 47vw;
+  bottom:20vh;
+  right: 1vw;
   width: 4vh;
   height: 4vh;
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius:5em;
-  padding:3px;
+  padding:4px;
 }
 
 #facebook_logo{
   position: fixed;
-  bottom:2.2vh;
-  left: 51vw;
-  width: 4.4vh;
-  height: 4.4vh;
-  border: 3px solid black;
-  border-radius:1em;
+  bottom:12vh;
+  right: 1vw;
+  width: 4.7vh;
+  height: 4.7vh;
+  border: 2px solid black;
+  border-radius:5em;
 }
 
 #whatsapp_logo{
   position: fixed;
-  bottom:2vh;
-  left: 54.7vw;
+  bottom:4vh;
+  right: 1vw;
   width: 3vh;
   height: 3vh;
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius:5em;
   padding:6px;
 }
