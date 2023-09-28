@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($to, $subject, $message, $headers);
 
     // Redirect back to your thank-you page or homepage
-    header("Location: contact.html"); // Replace with your thank-you page URL
+    header("contact.html"); // Replace with your thank-you page URL
 } else {
     // Handle form submission error
     echo "Form submission failed. Please try again.";
