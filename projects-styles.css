@@ -124,6 +124,8 @@ a{
   margin-top: 2vh;
   font-size: 1.4vw;
   text-align: left;
+  letter-spacing:2px;
+  text-wrap:balance;
 }
 
 #about-section-1:hover {
@@ -161,6 +163,8 @@ a{
   margin-top: 2vh;
   font-size: 1.4vw;
   text-align: right;
+  letter-spacing:2px;
+  text-wrap:balance;
 }
 
 #about-section-2:hover {
@@ -198,6 +202,8 @@ a{
   margin-top: 2vh;
   font-size: 1.4vw;  
   text-align: left;
+  letter-spacing:2px;
+  text-wrap:balance;
 }
 
 #about-section-3:hover {
@@ -235,6 +241,8 @@ a{
   margin-top: 2vh;
   font-size: 1.4vw;
   text-align: right;
+  letter-spacing:2px;
+  text-wrap:balance;
 }
 
 #about-section-4:hover {
@@ -271,6 +279,8 @@ a{
   margin-top: 2vh;
   font-size: 1.4vw;
   text-align: left;
+  letter-spacing:2px;
+  text-wrap:balance;
 }
 
 #about-section-5:hover {
