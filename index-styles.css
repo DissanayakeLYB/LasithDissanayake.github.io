@@ -30,6 +30,10 @@ body{
     background-color: rgb(233, 231, 231, 0.2);
 }
 
+#background{
+    height:100vh;
+}
+
 #CV{
     position:fixed;
     color:rgb(0, 0, 0);
@@ -62,34 +66,41 @@ section{
     margin-left:10vw;
     padding-bottom: 0;
     color: rgb(0, 0, 0);
-    display: flex;
-    position: flex;
+    display: relative;
     font-family:brush script mt, cursive;
     flex-wrap:wrap;
     width:50vw;
 }
 
 h1{
-    display: flex;
+    padding:0;
+    display: inline-block;
     text-wrap:wrap;
     font-size: 6vw;
     margin-bottom: 0;
-    letter-spacing: 3px;
+    letter-spacing: 3px;    
+}
+
+@keyframes typing {
+    0% { width : 0%};
+    50% { width : 100%}; 
+    0% { width : 0%};  
 }
 
 #designation p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
-    font-style: italic;
-    display:flex;
     position:relative;
     text-wrap:wrap;
     font-size: 1vw;
-    margin-top: -60px;
     margin-left: 0.4vw;
     padding-top: 0;
     top:0;
-    letter-spacing: 10px;
+    letter-spacing: 9px;
+    animation: typing 2s steps(50) infinite;
+    width:100%;
+    white-space: nowrap;
+    overflow:hidden;
 }
 
 #nav-bar{
@@ -119,10 +130,8 @@ a{
 
 #footer-bar{
     position: fixed;
-    /* display:flex; */
     margin:0;
     padding:0;
-    /* background-color: rgba(0, 0, 0, 0.1); */
     width:20vw;
     height:10vh;
     bottom:0;
@@ -173,5 +182,3 @@ a{
     border-radius:5em;
     padding:6px;
 }
-
-
