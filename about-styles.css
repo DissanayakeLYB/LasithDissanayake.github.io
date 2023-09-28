@@ -21,17 +21,19 @@ body{
   padding: 0;
   width: 100vw;
   height:100vh;
-  background-color: rgb(66, 33, 33);
+  background-color: rgb(255, 255, 255);
 }
 
 #CV{
   position:fixed;
-  color:white;
-  background-color: rgba(94, 16, 16, 0.4);
+  color:rgb(0, 0, 0);
   margin-top:3vh;
   margin-left:2vw;
   padding:10px;
   border-radius:100px;
+  border:0;
+  font-size: 2vh;
+  background: none;
 }
 
 #nav-bar{
@@ -41,15 +43,15 @@ body{
   display:flex;
   position:fixed;
   flex-wrap:wrap;
-  gap:5vw;
+  gap:3vw;
   margin-top:4vh;
   right:3vw;
-  font-size: 2.5vh;
+  font-size: 2vh;
 }
 
 a{
     text-align: right;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -61,38 +63,70 @@ a{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:5em;
+    gap:3em;
 }
 
-#about-section-1 {
-    display: flex;
-    background-color: rgba(247, 247, 247, 0.2); 
-    min-width: 35em;
-    min-height: 35em;
-    border-radius: 2em;
-    transition-duration: 0.5s;
-  }
-
-#about-section-2 {
-    display: flex;
-    background-color: rgba(247, 247, 247, 0.2); 
-    min-width: 35em;
-    min-height: 35em;
-    border-radius: 2em;
-    transition-duration: 0.5s;
-  }
-
-#about-section-1:hover{
-    background-color: rgba(247, 247, 247, 0.3);
-    transition-duration: 0.5s;
+.about-section {
+  text-transform: uppercase;
+  text-align:center;
+  width: 30em;
+  min-height: 1em;
+  border-radius: 2em;
+  transition-duration: 0.4s;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 1em;   
+  font-size:5vh;
+  margin-left:0;
+  margin-right:0;
+  letter-spacing: 10px;
 }
 
-#about-section-2:hover{
-    background-color: rgba(247, 247, 247, 0.3);
-    transition-duration: 0.5s;
+.about-section:hover{
+    transition-duration: 0.4s;
+    width: auto;
+    font-size:6vh;
+    margin-left:0;
+    margin-right:0;
 }
 
 #about{
-  text-decoration: solid 0.2vh underline white;
-  text-underline-offset: 0.5vh;
+  text-decoration: solid 0.2vh underline rgb(0, 0, 0);
+  text-underline-offset: 0.7vh;
 }
+
+#about-section-1 {
+   margin-right:10em;
+}
+
+#about-section-2 {
+   margin-left:10em;
+}
+
+#about-section-3 {
+   margin-right:10em;
+}
+
+#about-section-4 {
+  margin-left:10em;
+}
+
+#about-section-5 {
+   margin-right:10em;
+}
+
+#about-section-6 {
+  margin-left:10em;
+}
+
+#about-section-7 {
+  margin-right:10em;
+}
+
+#about-section-8 {
+  margin-left:10em;
+}
+
+#about-section-9 {
+  margin-right:10em;
+}
+
