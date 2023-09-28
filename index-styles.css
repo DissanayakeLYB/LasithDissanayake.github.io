@@ -25,9 +25,10 @@ body{
 }
 
 #header{
-    position:flex;
-    flex-wrap: wrap;
-    background-color: rgb(233, 231, 231, 0.2);
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 10vh;
 }
 
 #background{
@@ -82,27 +83,27 @@ h1{
 }
 
 @keyframes typing {
-    0% { width : 0%};
-    50% { width : 100%}; 
-    0% { width : 0%};  
-}
-
-#designation p{
+    0% { width: 0; }
+    20% { width: 100%; } 
+    80% { width: 100%; } 
+    100% { width: 0%; }
+  }
+  
+  #designation p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
-    position:relative;
-    text-wrap:wrap;
+    position: relative;
     font-size: 1vw;
     margin-left: 0.4vw;
     padding-top: 0;
-    top:0;
+    top: 0;
     letter-spacing: 9px;
-    animation: typing 2s steps(50) infinite;
-    width:100%;
+    animation: typing 10s linear infinite; /* Removed animation-delay */
+    width: 100%;
     white-space: nowrap;
-    overflow:hidden;
-}
-
+    overflow: hidden;
+  }
+  
 #nav-bar{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform:uppercase;
@@ -119,12 +120,12 @@ h1{
 
 a{
     text-align: right;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 #home{
-    text-decoration: solid 0.2vh underline rgb(0, 0, 0);
+    text-decoration: solid 0.2vh underline rgb(255, 255, 255);
     text-underline-offset: 0.7vh;
 }
 
