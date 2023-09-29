@@ -1,8 +1,8 @@
 emailjs.init("c6fMK7cKe2DOpGncK");
 
 const templateParams = {
-    email: "Your Email",
-    message: "This is the email message content.",
+    email: {email},
+    message: {message},
   };
   
   emailjs.send("service_rrqigwi", "template_j0017sv", templateParams)
