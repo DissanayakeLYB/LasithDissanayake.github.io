@@ -6,6 +6,6 @@ function SendMail(){
     }
 
     emailjs.send("service_rrqigwi", "template_j0017sv", params).then(function(res){
-        alert("Success! " + res.status);
+        alert("Thank you for the feedback!" + res.status);
     })
 }
