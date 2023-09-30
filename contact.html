@@ -6,8 +6,14 @@
     <title>Lasith Dissanayake</title>
     <link rel="icon" type="image/jpeg" href="vector/L.jpeg">
     <link rel="stylesheet" href="contact-styles.css">
+    <script type="text/javascript" src="contact.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="contact.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("c6fMK7cKe2DOpGncK");
+      })();
+    </script>
 </head>
 <body>
     <section id="background">
@@ -38,7 +44,7 @@
                     <label for="message">Feedback</label>
                     <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
                   </div>
-                  <button type="submit" id="btnSubmit" value="Submit">Submit</button>
+                  <button type="submit" id="btnSubmit" onclick="SendMail()">Submit</button>
                 </form>
               </section>
               
