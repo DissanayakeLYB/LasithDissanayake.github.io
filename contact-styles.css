@@ -41,8 +41,13 @@ body{
   background: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 2px;
+  transition-duration: 0.2s;
 }
 
+#CV:hover {
+  margin-top:2vh;
+  transition-duration: 0.2s;
+}
 
 form{
   padding-left:2em;
@@ -79,6 +84,31 @@ a{
 #contact{
   text-decoration: solid 0.2vh underline rgb(255, 255, 255);
   text-underline-offset: 0.7vh;
+}
+
+#home{
+  transition-duration: 0.2s;
+}
+
+#projects{
+  transition-duration: 0.2s;
+}
+
+#about{
+  transition-duration: 0.2s;
+}
+
+#nav-bar #projects:hover {
+  margin-top:-0.5vh;
+  transition-duration: 0.2s;
+}
+#nav-bar #home:hover {  
+  margin-top:-0.5vh;
+  transition-duration: 0.2s;
+}
+#nav-bar #about:hover {  
+  margin-top:-0.5vh;
+  transition-duration: 0.2s;
 }
 
 #section-container{

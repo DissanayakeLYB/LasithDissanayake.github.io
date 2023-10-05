@@ -37,16 +37,23 @@ body{
 
 #CV{
     position:fixed;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     margin-top:2.5vh;
     margin-left:2vw;
     padding:10px;
+    border-radius:100px;
     border:0;
     font-size: 2vh;
     background: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 2px;
+    transition-duration: 0.2s;
   }
-
+  
+  #CV:hover {
+    margin-top:2vh;
+    transition-duration: 0.2s;
+  }
 section{
     display:flex;
 }
@@ -124,20 +131,17 @@ h1{
     transition-duration: 0.2s;
 }
 #nav-bar #about:hover {
-    text-decoration: solid 0.2vh underline rgb(255, 255, 255);
-    text-underline-offset: 1vh;
+    margin-top: -0.5vh;
     transition-duration: 0.2s;
-}
-#nav-bar #projects:hover {
-    text-decoration: solid 0.2vh underline rgb(255, 255, 255);
-    text-underline-offset: 1vh;
+  }
+  #nav-bar #projects:hover {
+    margin-top: -0.5vh;
     transition-duration: 0.2s;
-}
-#nav-bar #contact:hover {
-    text-decoration: solid 0.2vh underline rgb(255, 255, 255);
-    text-underline-offset: 1vh;
+  }
+  #nav-bar #contact:hover {
+    margin-top: -0.5vh;
     transition-duration: 0.2s;
-}
+  }
 
 a{
     text-align: right;
@@ -166,7 +170,7 @@ a{
     width: 4vh;
     height: 4vh;
     border: 2px solid black;
-    border-radius:5em;
+    border-radius:100em;
     padding:3px;
 }
 
@@ -177,7 +181,7 @@ a{
     width: 4vh;
     height: 4vh;
     border: 2px solid black;
-    border-radius:5em;
+    border-radius:100em;
     padding:3px;
 }
 
@@ -188,7 +192,7 @@ a{
     width: 4.4vh;
     height: 4.4vh;
     border: 2px solid black;
-    border-radius:1em;
+    border-radius:100em;
 }
 
 #whatsapp_logo{
@@ -198,7 +202,7 @@ a{
     width: 3vh;
     height: 3vh;
     border: 2px solid black;
-    border-radius:5em;
+    border-radius:100em;
     padding:6px;
 }
 

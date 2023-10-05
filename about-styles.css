@@ -29,7 +29,7 @@ body{
 
 #CV{
   position:fixed;
-  color:rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
   margin-top:2.5vh;
   margin-left:2vw;
   padding:10px;
@@ -39,6 +39,12 @@ body{
   background: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 2px;
+  transition-duration: 0.2s;
+}
+
+#CV:hover {
+  margin-top:2vh;
+  transition-duration: 0.2s;
 }
 
 #header{
@@ -66,7 +72,18 @@ a{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-
+#nav-bar #projects:hover {
+  margin-top: -0.5vh;
+  transition-duration: 0.2s;
+}
+#nav-bar #home:hover {
+  margin-top: -0.5vh;
+  transition-duration: 0.2s;
+}
+#nav-bar #contact:hover {
+  margin-top: -0.5vh;
+  transition-duration: 0.2s;
+}
 #section-container{
     padding: 3em;
     padding-top:6em;
