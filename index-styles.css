@@ -124,7 +124,17 @@ h1{
     font-size: 2vh;
     letter-spacing: 2px;
   }
-
+  #contact{
+    transition-duration: 0.2s;
+  }
+  
+  #projects{
+    transition-duration: 0.2s;
+  }
+  
+  #about{
+    transition-duration: 0.2s;
+  }
 #nav-bar #home {
     text-decoration: solid 0.2vh underline rgb(255, 255, 255);
     text-underline-offset: 1vh;

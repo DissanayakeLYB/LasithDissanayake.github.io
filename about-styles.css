@@ -72,6 +72,18 @@ a{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
+#home{
+  transition-duration: 0.2s;
+}
+
+#projects{
+  transition-duration: 0.2s;
+}
+
+#contact{
+  transition-duration: 0.2s;
+}
 #nav-bar #projects:hover {
   margin-top: -0.5vh;
   transition-duration: 0.2s;
