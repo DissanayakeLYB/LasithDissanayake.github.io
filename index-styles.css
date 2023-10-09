@@ -21,7 +21,8 @@ body{
     padding: 0;
     width: 100vw;
     height:100vh;
-    background-color: rgb(233, 231, 231)  
+    background-color: rgb(233, 231, 231); 
+    justify-content: center;
 }
 
 #header{
