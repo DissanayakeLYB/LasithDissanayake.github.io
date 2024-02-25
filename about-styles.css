@@ -174,57 +174,50 @@ a{
   margin-bottom:3em;
 }
 
-#footer-bar{
+#footer-bar {
   position: fixed;
-  display:flex;
-  margin:0;
-  padding:0;
-  width:0.25vw;
-  height:30vh;
-  bottom:35vh;
-  right:2vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  bottom: 35vh;
+  right: 2vw;
   list-style: none;
 }
 
-#linkedin_logo{
-  position: fixed;
-  bottom:28vh;
-  right: 1vw;
-  width: 4vh;
-  height: 4vh;
-  border: 2px solid black;
-  border-radius:5em;
-  padding:4px;
+#footer-bar li {
+  margin-bottom: 1vh;
 }
 
-#github_logo{
-  position: fixed;
-  bottom:20vh;
-  right: 1vw;
-  width: 4vh;
-  height: 4vh;
+#linkedin,
+#github,
+#facebook,
+#whatsapp {
+  position: relative;
+  width: 4.5vh;
+  height: 4.5vh;
   border: 2px solid black;
-  border-radius:5em;
-  padding:4px;
+  border-radius: 50%;
+  padding: 4px;
+  text-align: center;
 }
 
-#facebook_logo{
-  position: fixed;
-  bottom:12vh;
-  right: 1vw;
-  width: 4.7vh;
-  height: 4.7vh;
-  border: 2px solid black;
-  border-radius:5em;
+#linkedin a,
+#github a,
+#facebook a,
+#whatsapp a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2.5vh;
+  text-decoration: none;
+  color: black; 
 }
 
-#whatsapp_logo{
-  position: fixed;
-  bottom:4vh;
-  right: 1vw;
-  width: 3vh;
-  height: 3vh;
-  border: 2px solid black;
-  border-radius:5em;
-  padding:6px;
+footer ul li a i{
+  color:black;
 }
