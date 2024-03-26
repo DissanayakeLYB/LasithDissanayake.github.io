@@ -1,127 +1,152 @@
-/* Basic Styles */
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #222;
-  color: #ddd;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Header Section */
-header {
+  font-family: Arial, sans-serif;
   background-color: #111;
+  color: #eee;
+}
+
+/* Header styles */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   padding: 20px;
-  text-align: center;
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-h1, h2 {
-  margin: 0;
-  padding: 0;
+header.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
-/* Hero Section */
+header.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+header h1 {
+  color: #eee;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #eee;
+  text-decoration: none;
+}
+
+/* Hero section styles */
 .hero {
-  background-color: #000;
-  padding: 100px 0;
-  text-align: center;
-  color: #fff;
-}
-
-.hero-container {
+  height: 100vh;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
 }
 
-.hero p {
-  font-size: 1.2em;
+/* Dark section styles */
+.dark-section {
+  background-color: #222;
+  padding: 100px 20px;
+}
+
+.dark-section h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.dark-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.dark-section ul {
+  list-style-type: none;
+}
+
+.dark-section ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dark-section .project {
   margin-bottom: 40px;
 }
 
-.hero-btn {
-  background-color: #3CB371;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+.dark-section .project h3 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.hero-btn:hover {
-  background-color: #2AAE60;
+.dark-section .project p {
+  font-size: 18px;
 }
 
-/* About Me, Portfolio, Contact Sections */
-section {
-  padding: 20px;
-  color: #ddd;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-/* Portfolio Section */
-.project-container {
-  display: flex;
-  flex-wrap: wrap;  /* Corrected line: flex-wrap property defines how flex items wrap */
-  justify-content: space-around;
-}
-
-article {
-  width: 30%;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-article img {
+.dark-section .contact-form input,
+.dark-section .contact-form textarea {
   width: 100%;
-  display: block;
-  margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #333;
+  color: #eee;
 }
 
-/* Contact Section */
-section#contact p {
-  margin-bottom: 10px;
+.dark-section .contact-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
 }
 
-section#contact a {
-  color: blue;
+.dark-section .contact-form input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
-/* Footer Section */
+/* Footer styles */
 footer {
-  background-color: #111;
-  padding: 20px;
-  color: #ddd;
+  background-color: #222;
+  padding: 50px 20px;
   text-align: center;
 }
 
-footer p {
-  margin-bottom: 10px;
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 0 
+  10px;
 }
 
-footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer li {
-  display: inline-block;
-  margin: 0 10px;
+.additional-details p {
+  font-size: 18px;
+  margin-top: 10px;
 }
