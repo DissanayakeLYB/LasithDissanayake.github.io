@@ -3,52 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
+  <title>Dark Themed Webpage</title>
   <link rel="stylesheet" href="trial-css.css">
 </head>
 <body>
-
-  <header>
-    <h1>Your Name</h1>
-    <h2>Your Job Title / Expertise</h2>
+  <header class="hidden">
+    <h1>My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="hero">
-    <div class="hero-container">
-      <h1>Welcome to My Portfolio</h1>
-      <p>A short description of what you do and who you are.</p>
-      <a href="#about" class="hero-btn">Learn More</a>
+    <div class="hero-content">
+      <h1>Welcome to My Website</h1>
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="dark-section">
     <h2>About Me</h2>
-    <p>Your detailed bio about your professional journey and achievements (replace this placeholder).</p>
+    <p>I'm a passionate individual dedicated to continuous learning and growth. My expertise lies in web development and design, and I strive to create elegant and functional solutions.</p>
   </section>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="project-container">
-      <article>
-        <h3>Project Title (Replace)</h3>
-        <img src="image1.jpg" alt="Project Description">
-        <p>A brief description of Project 1 (Replace this placeholder).</p>
-      </article>
-      </div>
+  <section id="interests" class="dark-section">
+    <h2>Interests</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>Graphic Design</li>
+      <li>Photography</li>
+      <li>Video Editing</li>
+    </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Your email address: <a href="mailto:youremail@example.com">youremail@example.com</a> (or other contact methods).</p>
+  <section id="projects" class="dark-section">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Description of Project 1.</p>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Description of Project 2.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="dark-section">
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-    <ul>
-      <li><a href="#">Social Link 1</a></li>
-      <li><a href="#">Social Link 2</a></li>
-      </ul>
+    <div class="social-icons">
+      <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+      <a href="#" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+    </div>
+    <div class="additional-details">
+      <p>Email: example@example.com</p>
+      <p>Phone: +1234567890</p>
+      <p>Location: Your City, Your Country</p>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
